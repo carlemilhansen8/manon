@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="da">
+ <head>
+  <!-- Her ligger titel, beskrivelse og link til designfilen -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#191b18" name="theme-color"/>
+  <title>
+   MANON &mdash; Vin &amp; cocktails i Aarhus
+  </title>
+  <meta content="Manon &mdash; vin, cocktails og n&aelig;rv&aelig;r i Aarhus. Udforsk menukortet, arrangementer og kontakt os." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- REDIGER TEKSTER OG BILLEDER I SEKTIONERNE HERUNDER -->
+  <header>
+   <a aria-label="Manon forside" class="logo" href="#top">
+    MANON
+   </a>
+   <button aria-expanded="false" aria-label="&Aring;bn menu" class="menu-toggle">
+    ☰
+   </button>
+   <nav id="navigation">
+    <a href="#om">
+     Om Manon
+    </a>
+    <a href="#menukort">
+     Menukort
+    </a>
+    <a href="#arrangementer">
+     Arrangementer
+    </a>
+    <a href="#kontakt">
+     Kontakt
+    </a>
+    <a class="nav-book" href="#booking">
+     Foresp&oslash;rg p&aring; bord
+    </a>
+   </nav>
+  </header>
+  <main id="top">
+   <section class="hero">
+    <div class="hero-content">
+     <span class="eyebrow">
+      Aarhus &middot; Vin &middot; Cocktails
+     </span>
+     <h1>
+      Moments
+      <br/>
+      at Manon.
+     </h1>
+     <p>
+      Et sted at m&oslash;des. Et glas mere. En aften, der gerne m&aring; vare lidt l&aelig;ngere.
+     </p>
+     <a class="btn" href="#booking">
+      Foresp&oslash;rg p&aring; bord
+     </a>
+    </div>
+   </section>
+   <section class="section intro" id="om">
+    <div class="intro-copy reveal">
+     <span class="eyebrow">
+      Velkommen indenfor
+     </span>
+     <h2 class="section-title">
+      En lille pause
+      <br/>
+      fra det hele.
+     </h2>
+     <p>
+      Hos Manon er der plads til de spontane aftaler, de lange samtaler og de s&aelig;rlige &oslash;jeblikke. Vi holder af gode glas, godt selskab og en stemning, man har lyst til at blive i.
+     </p>
+     <div class="small-line">
+     </div>
+     <p>
+      Midt i Aarhus inviterer vi dig indenfor til vin, cocktails og n&aelig;rv&aelig;r.
+     </p>
+    </div>
+    <img alt="Stemningsbillede fra et selskab"
+     class="reveal"
+     loading="lazy"
+     src="images/manonspritz.png"/>
+   </section>
+   <section class="section dark" id="menukort">
+    <div class="menu-heading center reveal">
+     <span class="eyebrow">
+      Noget godt i glasset
+     </span>
+     <h2 class="section-title">
+      Menukort
+     </h2>
+     <p class="section-lead" style="color:#c0c2b9">
+      En smagspr&oslash;ve p&aring; stemningen. Det aktuelle udvalg og priser oplyses i baren.
+     </p>
+    </div>
+    <div aria-label="Menukategorier" class="menu-tabs" role="tablist">
+     <button aria-selected="true" class="tab active" data-tab="cocktails" role="tab">
+      Cocktails
+     </button>
+     <button aria-selected="false" class="tab" data-tab="vin" role="tab">
+      Vin
+     </button>
+     <button aria-selected="false" class="tab" data-tab="andet" role="tab">
+      Andet
+     </button>
+    </div>
+    <div aria-live="polite" class="menu-list" id="menu-items">
+    </div>
+    <p class="note">
+     Illustrativt menukort.
+    </p>
+   </section>
+   <section class="section feature" id="arrangementer">
+<img alt="Stemningsbillede fra et selskab"
+     class="reveal"
+     loading="lazy"
+     src="images/blanc.png"/>    <div class="feature-copy reveal">
+     <span class="eyebrow">
+      Sammen om oplevelsen
+     </span>
+     <h2 class="section-title">
+      Noget at
+      <br/>
+      fejre?
+     </h2>
+     <p>
+      F&oslash;dselsdag, firmaarrangement eller bare en god anledning til at samle dem, du holder af? Fort&aelig;l os om dine planer, s&aring; tager vi en snak om mulighederne.
+     </p>
+     <a class="btn" href="https://www.instagram.com/manon_aarhus/" id="event-link" rel="noopener" target="_blank">
+      Kontakt om arrangement
+     </a>
+     <p class="fineprint">
+      Kontaktadresse inds&aelig;ttes, n&aring;r Manons officielle e-mail er bekr&aelig;ftet.
+     </p>
+    </div>
+   </section>
+   <section class="section booking" id="booking">
+    <div class="booking-wrap">
+     <div class="reveal">
+      <span class="eyebrow">
+       Vi gl&aelig;der os til at se dig
+      </span>
+      <h2 class="section-title">
+       Et bord
+       <br/>
+       hos Manon.
+      </h2>
+      <p class="section-lead">
+       Send en foresp&oslash;rgsel med dato, tidspunkt og antal g&aelig;ster. Denne demo &aring;bner en e-mail i dit eget mailprogram &ndash; bordet er f&oslash;rst reserveret, n&aring;r Manon bekr&aelig;fter det.
+      </p>
+     </div>
+     <form class="booking-form reveal" id="booking-form">
+      <div class="field">
+       <label for="name">
+        Navn
+       </label>
+       <input autocomplete="name" id="name" placeholder="Dit navn" required=""/>
+      </div>
+      <div class="field">
+       <label for="email">
+        E-mail
+       </label>
+       <input autocomplete="email" id="email" placeholder="din@email.dk" required="" type="email"/>
+      </div>
+      <div class="field">
+       <label for="date">
+        Dato
+       </label>
+       <input id="date" required="" type="date"/>
+      </div>
+      <div class="field">
+       <label for="time">
+        Tidspunkt
+       </label>
+       <input id="time" required="" type="time" value="19:00"/>
+      </div>
+      <div class="field">
+       <label for="guests">
+        Antal personer
+       </label>
+       <select id="guests" required="">
+        <option value="2">
+         2 personer
+        </option>
+        <option value="1">
+         1 person
+        </option>
+        <option value="3">
+         3 personer
+        </option>
+        <option value="4">
+         4 personer
+        </option>
+        <option value="5">
+         5 personer
+        </option>
+        <option value="6">
+         6 personer
+        </option>
+        <option value="7+">
+         7 eller flere
+        </option>
+       </select>
+      </div>
+      <div class="field">
+       <label for="message">
+        Besked (valgfrit)
+       </label>
+       <textarea id="message" placeholder="Noget vi skal vide?"></textarea>
+      </div>
+      <button type="submit">
+       Klarg&oslash;r foresp&oslash;rgsel &nearrow;
+      </button>
+      <p class="fineprint" id="form-status" role="status">
+       Demo: Du skal selv sende e-mailen. Ingen oplysninger gemmes p&aring; hjemmesiden.
+      </p>
+     </form>
+    </div>
+   </section>
+   <section class="section contact" id="kontakt">
+    <div class="reveal">
+     <span class="eyebrow">
+      Find os
+     </span>
+     <h2 class="section-title">
+      Vi ses
+      <br/>
+      i Aarhus.
+     </h2>
+     <p>
+      Frederiksgade 44
+      <br/>
+      8000 Aarhus C
+     </p>
+     <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Frederiksgade+44+8000+Aarhus" rel="noopener" target="_blank">
+      Find vej &nearrow;
+     </a>
+    </div>
+    <div class="reveal">
+     <span class="eyebrow">
+      F&oslash;lg med
+     </span>
+     <h2 class="section-title">
+      Lidt mere
+      <br/>
+      Manon.
+     </h2>
+     <p>
+      F&oslash;lg os p&aring; Instagram for glimt fra baren, nyheder og kommende arrangementer.
+     </p>
+     <a href="https://www.instagram.com/manon_aarhus/" rel="noopener" target="_blank">
+      @manon_aarhus &nearrow;
+     </a>
+     <div class="small-line">
+     </div>
+     <p class="fineprint">
+      &Aring;bningstider og direkte kontaktoplysninger tilf&oslash;jes efter bekr&aelig;ftelse.
+     </p>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="footer-grid">
+    <div>
+     <div class="logo">
+      MANON
+     </div>
+     <p>
+      Vin. Cocktails. N&aelig;rv&aelig;r.
+      <br/>
+      Frederiksgade 44, Aarhus.
+     </p>
+    </div>
+    <div>
+     <span class="eyebrow">
+      Udforsk
+     </span>
+     <p>
+      <a href="#menukort">
+       Menukort
+      </a>
+      <br/>
+      <a href="#booking">
+       Bordforesp&oslash;rgsel
+      </a>
+      <br/>
+      <a href="#arrangementer">
+       Arrangementer
+      </a>
+     </p>
+    </div>
+    <div>
+     <span class="eyebrow">
+      Socialt
+     </span>
+     <p>
+      <a href="https://www.instagram.com/manon_aarhus/" rel="noopener" target="_blank">
+       Instagram &nearrow;
+      </a>
+     </p>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <span>
+     &copy;
+     <span id="year">
+     </span>
+     MANON
+    </span>
+    <span>
+     Skabt med omtanke i Aarhus
+    </span>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
