@@ -7,16 +7,16 @@
 //    Menukortet er kun et eksempel, indtil I indsætter det rigtige.
 const menu = {
   cocktails: [
-    ['Drink 1', 'Gin · bitter · vermouth'],
-    ['Drink 2', 'Vodka · espresso · kaffelikør'],
-    ['Drink 3', 'Gin · citron · bobler'],
-    ['Drink 4', 'Tequila · grapefrugt · lime']
+    ['Fremhævet drink 1', 'Gin · bitter · vermouth'],
+    ['Fremhævet drink 2', 'Vodka · espresso · kaffelikør'],
+    ['Fremhævet drink 3', 'Gin · citron · bobler'],
+    ['Fremhævet drink 4', 'Tequila · grapefrugt · lime']
   ],
   vin: [
-    ['Vin 1', 'Spørg efter dagens udvalg'],
-    ['Vin 2', 'Frisk, mineralsk eller fyldig'],
-    ['Vin 3', 'Et glas til de lyse timer'],
-    ['Vin 4', 'Fra let og elegant til dyb og intens']
+    ['Fremhævet vin 1', 'Spørg efter dagens udvalg'],
+    ['Fremhævet vin 2', 'Frisk, mineralsk eller fyldig'],
+    ['Fremhævet vin 3', 'Et glas til de lyse timer'],
+    ['Fremhævet vin 4', 'Fra let og elegant til dyb og intens']
   ],
   andet: [
     ['Alkoholfri cocktails', 'Spørg efter mulighederne'],
