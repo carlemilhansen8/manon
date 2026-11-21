@@ -92,10 +92,7 @@ const iDag = new Date();
 const lokalDato = [iDag.getFullYear(), String(iDag.getMonth() + 1).padStart(2, '0'), String(iDag.getDate()).padStart(2, '0')].join('-');
 document.getElementById('date').min = lokalDato;
 
-// 5. BOOKING – indsæt Manons rigtige e-mailadresse mellem anførselstegnene.
-// Eksempel: const bookingEmail = 'booking@ditdomaene.dk';
-// Dette er en e-mailforespørgsel, IKKE et egentligt bookingsystem.
-const bookingEmail = '';
+const bookingEmail = 'carlemilhansen@gmail.com';
 
 document.getElementById('booking-form').addEventListener('submit', event => {
   event.preventDefault();
