@@ -155,84 +155,32 @@
       </p>
      </div>
     <form
-  class="booking-form reveal"
-  id="booking-form"
-  action="https://formsubmit.co/booking@manonaarhus.dk"
-  method="POST"
->
-  <input type="hidden" name="_subject"
-         value="Ny bookingforespørgsel - MANON">
-
-  <input type="hidden" name="_template" value="table">
-
-  <input type="hidden" name="_captcha" value="true">
-      <div class="field">
-       <label for="name">
-        Navn
-       </label>
-       <input autocomplete="name" id="name" placeholder="Dit navn" required=""/>
-      </div>
-      <div class="field">
-       <label for="email">
-        E-mail
-       </label>
-       <input autocomplete="email" id="email" placeholder="din@email.dk" required="" type="email"/>
-      </div>
-      <div class="field">
-       <label for="date">
-        Dato
-       </label>
-       <input id="date" required="" type="date"/>
-      </div>
-      <div class="field">
-       <label for="time">
-        Tidspunkt
-       </label>
-       <input id="time" required="" type="time" value="19:00"/>
-      </div>
-      <div class="field">
-       <label for="guests">
-        Antal personer
-       </label>
-       <select id="guests" required="">
-        <option value="1">
-         1 person
-        </option>
-        <option value="2">
-         2 personer
-        </option>
-        <option value="3">
-         3 personer
-        </option>
-        <option value="4">
-         4 personer
-        </option>
-        <option value="5">
-         5 personer
-        </option>
-        <option value="6">
-         6 personer
-        </option>
-        <option value="7+">
-         7 eller flere
-        </option>
-       </select>
-      </div>
-      <div class="field">
-       <label for="message">
-        Besked (valgfrit)
-       </label>
-       <textarea id="message" placeholder="Noget vi skal vide?"></textarea>
-      </div>
-      <button type="submit">
-       Klarg&oslash;r foresp&oslash;rgsel &nearrow;
-      </button>
-      <p class="fineprint" id="form-status" role="status">
-       Demo: Intet plug-in tilknyttet. Hjemmesiden skal kobles op på eksternt program.
-      </p>
-     </form>
+<section class="section booking" id="booking">
+  <div class="booking-wrap">
+    <div class="reveal">
+      <span class="eyebrow">Vi glæder os til at se dig</span>
+      <h2 class="section-title">Et bord<br/>hos Manon.</h2>
+      <p class="section-lead">Send en forespørgsel med dato, tidspunkt og antal gæster. Bordet er først reserveret, når Manon har bekræftet det.</p>
     </div>
-   </section>
+    <form class="booking-form reveal" id="booking-form" action="https://formsubmit.co/booking@manonaarhus.dk" method="POST">
+      <input type="hidden" name="_subject" value="Ny bookingforespørgsel - MANON"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_captcha" value="true"/>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+      <div class="field"><label for="name">Navn</label><input autocomplete="name" id="name" name="name" placeholder="Dit navn" required/></div>
+      <div class="field"><label for="email">E-mail</label><input autocomplete="email" id="email" name="email" placeholder="din@email.dk" required type="email"/></div>
+      <div class="field"><label for="date">Dato</label><input id="date" name="Dato" required type="date"/></div>
+      <div class="field"><label for="time">Tidspunkt</label><input id="time" name="Tidspunkt" required type="time" value="19:00"/></div>
+      <div class="field"><label for="guests">Antal personer</label><select id="guests" name="Antal personer" required>
+        <option value="1">1 person</option><option value="2">2 personer</option><option value="3">3 personer</option><option value="4">4 personer</option><option value="5">5 personer</option><option value="6">6 personer</option><option value="7+">7 eller flere</option>
+      </select></div>
+      <div class="field"><label for="message">Besked (valgfrit)</label><textarea id="message" name="Besked" placeholder="Noget vi skal vide?"></textarea></div>
+      <button type="submit">Send bookingforespørgsel &nearr;</button>
+      <p class="fineprint" id="form-status" role="status">Din reservation er først gældende, når MANON har bekræftet den.</p>
+    </form>
+  </div>
+</section>
+
    <section class="section contact" id="kontakt">
     <div class="reveal">
      <span class="eyebrow">
