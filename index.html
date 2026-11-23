@@ -154,7 +154,18 @@
        Send en foresp&oslash;rgsel med dato, tidspunkt og antal g&aelig;ster. Denne demo &aring;bner en e-mail i dit eget mailprogram &ndash; bordet er f&oslash;rst reserveret, n&aring;r Manon bekr&aelig;fter det.
       </p>
      </div>
-     <form class="booking-form reveal" id="booking-form">
+    <form
+  class="booking-form reveal"
+  id="booking-form"
+  action="https://formsubmit.co/booking@manonaarhus.dk"
+  method="POST"
+>
+  <input type="hidden" name="_subject"
+         value="Ny bookingforespørgsel - MANON">
+
+  <input type="hidden" name="_template" value="table">
+
+  <input type="hidden" name="_captcha" value="true">
       <div class="field">
        <label for="name">
         Navn
